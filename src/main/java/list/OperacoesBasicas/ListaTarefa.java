@@ -34,5 +34,16 @@ public class ListaTarefa {
         ListaTarefa listaTarefa = new ListaTarefa();
 
         System.out.println("O numero total de elementos na lista e: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 2");
+        System.out.println("O numero total de elementos na lista e: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.removerTarefa("tarefa 2");
+        System.out.println("O numero total de elementos na lista e: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefas();
+
     }
 }
